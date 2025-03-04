@@ -27,28 +27,28 @@ This project helped me learn the basics of Angular, including using attributes, 
 
 ![Screenshot](https://i.imgur.com/rg2sjvL.png)
 
-## Como Usar
 
-1. Clone o repositório:
+## How to Use
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/FelipePaterni/Angular-Calc.git
    ```
 
-2. Navegue até a pasta do projeto:
+2. Navigate to the project folder:
    ```bash
    cd Angular-Calc
    ```
 
-3. Instale as dependências:
+3. Install the dependencies:
    ```bash
    npm install
    ```
 
-4. Rode o projeto:
+4. Run the project:
    ```bash
    ng s -o
    ```
 
-5. Abra no navegador:
+5. Open in your browser:
  http://localhost:4200
-  
