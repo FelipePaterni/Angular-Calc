@@ -1,36 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
- *{
-        
- }
-h1{
-        background-color: rgb(105, 213, 228);
-        color: rgb(61, 61, 61);
-        text-align: center;
-        border-radius: 25px;
+/*Reset básico*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-form{
-        display: flex;
-         justify-content: center;
-         align-items: center;
-       width: 80%;
-       margin: auto;
-       background-color: rgb(243, 240, 240);
-       padding: 25px;
-       flex-direction: column;
-       border-radius: 25px;
-
+html {
+  scroll-behavior: smooth;
+  padding: 12dvh 30dvw;
+  background-color: var(--fundo);
 }
-input{
-        margin-bottom: 3dvw;
-        width: 80%;
+/*responsividade simples*/
+@media (max-width: 1900px) {
+  html {
+    padding: 12dvh 20dvw;
+  }
 }
-button{
-        font-size: 12pt;
-        width: 10dvw;
-        border: 0 transparent;
-        background-color: rgb(105, 213, 228);
-        border-radius: 25px;
+@media (max-width: 1500px) {
+  html {
+    padding: 12dvh 12dvw;
+  }
+}
+/*cores variaveis*/
+:root {
+  --preto: #303030;
+  --fundoInput: #ffffff;
+  --branco: #fef9f5;
+  --fundo: #fff8eb;
+  --sombra:#888888;
+  --botao: #cd1112;
+  --botaoHover: #971010;
+}
 
-        padding: 10px;
+/*Titulo*/
+h1 {
+  padding: 25px;
+  text-align: center;
+  background-color: var(--preto);
+  border-radius: 25px 25px 0 0;
+  color: var(--branco);
+  font-weight: bold;
+  box-shadow: 5px 5px 5px var(--sombra);
+}
+/*formulario*/
+form {
+  background-color: var(--branco);
+  padding: 50px;
+  height: auto;
+  border-radius:0 0 25px 25px ;
+  display: flex;
+  gap: 3%;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px var(--sombra);
+}
+
+input {
+  box-shadow: 5px 5px 5px var(--sombra);
+  flex: 40%;
+  margin-bottom: 30px;
+  border: var(--preto) solid 1pt;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12pt;
+  color:var(--preto) ;
+  text-align: center; 
+  background-color: var(--fundoInput);
+}
+
+button {
+  box-shadow: 5px 5px 5px var(--sombra);
+  padding: 5px;
+  border: 0;
+  flex: 40%;
+  background-color: var(--botao);
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 12pt;
+  color: var(--branco);
+  text-align: center;
+  margin: 10px;
+  
+}
+button:hover{
+  background-color: var(--botaoHover);
+  box-shadow: inset -5px -5px 1px #7575752c;
+}
+/*resultado*/
+label {
+  flex: 100%;
+  border: var(--preto)  solid 1pt;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15pt;
+  color:var(--preto) ;
+  text-align: center; 
+  margin: auto;
+  margin-top: 50px;
+  background-color: var(--fundoInput);
+  box-shadow: 5px 5px 5px var(--sombra);
 }
