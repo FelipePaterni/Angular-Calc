@@ -1,6 +1,7 @@
 
 # Calculadora em Angular
-[English README](/README.md)
+[English README](/README.md)  
+  
 Um projeto simples para aprender a usar o framework Angular. O objetivo é fazer operações com dois números recebidos pelo usuário.
 
 ## Tecnologias Utilizadas

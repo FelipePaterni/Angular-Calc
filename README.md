@@ -1,6 +1,7 @@
 
-# Calculadora em Angular
-[README em Português](/README-PTBR.md)
+# Angular Calculator
+[README em Português](/README-PTBR.md)  
+  
 A simple project to learn how to use the Angular framework. The goal is to perform operations with two numbers provided by the user.
 
 ## Technologies Used
